@@ -101,4 +101,7 @@
       padding: 0 40px;
     }
   }
-  
+  .user-email {
+    color: #2ecc71; /* Light green */
+    font-weight: bold;
+  }

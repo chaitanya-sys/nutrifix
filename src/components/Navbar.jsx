@@ -18,6 +18,12 @@ function Navbar() {
     auth.signOut();
   };
 
+  // 👇 Helper to extract username from email
+  const getUsername = (user) => {
+    if (!user) return '';
+    return user.email?.split('@')[0] || 'User';
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -27,7 +33,8 @@ function Navbar() {
         <li><Link to="/">Home</Link></li>
         {user ? (
           <>
-            <li className="user-email">👋 {user.email}</li>
+            <li><Link to="/dashboard">Dashboard</Link></li>
+            <li className="user-email">👋 {getUsername(user)}</li>
             <li><button onClick={handleLogout} className="logout-btn">Logout</button></li>
           </>
         ) : (
