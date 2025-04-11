@@ -2,10 +2,13 @@ import { useEffect, useState } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../firebase';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
+  const navigate = useNavigate();
   const [user, setUser] = useState(null);
+
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -16,6 +19,7 @@ function Navbar() {
 
   const handleLogout = () => {
     auth.signOut();
+    navigate('/');
   };
 
   // 👇 Helper to extract username from email

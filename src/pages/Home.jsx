@@ -13,7 +13,7 @@ function Home() {
       <section className="hero-container">
         <div className="hero-left">
           <h1>Nutrifix</h1>
-          <p>Your personalized path to better nutrition 🍎</p>
+          <p>Your personalized path to better nutrition and fittness 🍎</p>
           <Link to="/signup" className="hero-btn">Get Started</Link>
         </div>
         <div className="hero-right">

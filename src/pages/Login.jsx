@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { signInWithEmailAndPassword, signInWithPopup, sendPasswordResetEmail } from 'firebase/auth';
 import { auth, provider } from '../firebase';
+import { Link } from 'react-router-dom';
 import './Login.css';
 
 function Login() {
@@ -94,7 +95,7 @@ function Login() {
         </button>
       </form>
 
-      <p>Don't have an account? <a href="/signup">Sign up for Nutrifix</a></p>
+      <p>Don't have an account? <Link to="/signup">Sign up for Nutrifix</Link></p>
     </motion.div>
   );
 }
