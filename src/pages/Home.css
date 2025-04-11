@@ -1,0 +1,150 @@
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    background: linear-gradient(to right, #ffffff, #e8fff3);
+    min-height: 90vh;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .hero-left {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .hero-left h1 {
+    font-size: 3.5rem;
+    color: #27ae60;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-left p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 500px;
+  }
+  
+  .hero-btn {
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: #27ae60;
+  }
+  
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .features-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    gap: 2rem;
+    background-color: #fff;
+  }
+  
+  .feature {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .feature img {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .feature h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #111;
+  }
+  
+  .feature p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .image-size {
+    width: 300px;
+    height: auto; /* Keeps the aspect ratio */
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  
+    .hero-left {
+      padding: 0;
+    }
+  
+    .hero-left h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero-left p {
+      font-size: 1rem;
+      max-width: 100%;
+    }
+  
+    .hero-btn {
+      font-size: 1rem;
+      padding: 0.6rem 1.5rem;
+    }
+  
+    .hero-right {
+      margin-top: 2rem;
+    }
+  
+    .features-section {
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+  
+    .feature {
+      padding: 1.5rem 1rem;
+    }
+  
+    .feature img {
+      width: 80px;
+    }
+  
+    .feature h3 {
+      font-size: 1.1rem;
+    }
+  
+    .feature p {
+      font-size: 0.95rem;
+    }
+  
+    .image-size {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+  
